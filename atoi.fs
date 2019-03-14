@@ -10,7 +10,7 @@
 ;
 
 : sum ( u1 u2 .. n -- u )
-  0 max 0 ?do dup + loop
+  0 max 0 ?do i 0= invert  if + then loop
   .s cr throw
 ;
 

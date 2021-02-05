@@ -1,5 +1,5 @@
 : ctoi ( c -- u )
-  0x30 - dup dup -1 < swap 9 > or if
+  $30 - dup dup -1 < swap 9 > or if
     throw
     then ;
 
@@ -17,3 +17,7 @@
   tuck 1- 0 swap do dup c@ ctoi 10 i pow * swap rot swap 1+ -1 +loop drop
   sum
 ;
+
+create v2 '1' c, '2' c, '3' c, '4' c,
+v2 4 atoi
+.s

@@ -7,10 +7,10 @@
   aw 4 fp read-file throw drop
 
   aw 3 + c@ if
-    aw 4 + $ff c!
-    aw 5 + $ff c!
-    aw 6 + $ff c!
-    aw 7 + $ff c!
+    aw 4 + $ff swap c!
+    aw 5 + $ff swap c!
+    aw 6 + $ff swap c!
+    aw 7 + $ff swap c!
   then
 
   1 cells allocate throw to ah
